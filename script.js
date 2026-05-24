@@ -1,38 +1,33 @@
-const results = [
-    { rank: 1, name: "Ameen", category: "HS", school: "GHSS Kozhikode", grade: "A+", points: 5 },
-    { rank: 2, name: "Fathima", category: "HSS", school: "St Mary's School", grade: "A+", points: 5 },
-    { rank: 3, name: "Rahul", category: "UP", school: "Modern School", grade: "A", points: 3 },
-    { rank: 4, name: "Shamil", category: "HS", school: "Govt School", grade: "A", points: 3 },
-    { rank: 5, name: "Anu", category: "UP", school: "Central School", grade: "B+", points: 1 }
-];
+document.addEventListener('DOMContentLoaded', () => {
+    const backToTopBtn = document.getElementById('backToTop');
 
-const tableBody = document.querySelector("#resultTable tbody");
-const searchInput = document.getElementById("searchInput");
-
-function displayData(data) {
-    tableBody.innerHTML = "";
-
-    data.forEach(student => {
-        let row = `
-            <tr>
-                <td>${student.rank}</td>
-                <td>${student.name}</td>
-                <td>${student.category}</td>
-                <td>${student.school}</td>
-                <td>${student.grade}</td>
-                <td>${student.points}</td>
-            </tr>
-        `;
-        tableBody.innerHTML += row;
+    // Show or hide the back-to-top button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.style.display = 'block';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
     });
-}
 
-searchInput.addEventListener("keyup", () => {
-    const value = searchInput.value.toLowerCase();
-    const filtered = results.filter(student =>
-        student.name.toLowerCase().includes(value)
-    );
-    displayData(filtered);
+    // Smooth scroll back to top when clicked
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Bottom Navigation Active State Toggle
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            // Remove active class from all
+            navItems.forEach(nav => nav.classList.remove('active'));
+            // Add active class to clicked item
+            item.classList.add('active');
+        });
+    });
 });
 
-displayData(results);
