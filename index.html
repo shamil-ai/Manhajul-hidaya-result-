@@ -6,6 +6,12 @@
     <title>Manhajul Hidaya Dars & Da'wa</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* സ്മൂത്ത് ആയി താഴേക്ക് വരാൻ ഇത് സഹായിക്കും */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
 
@@ -37,7 +43,7 @@
         
         <div class="container hero-content animate-fade-in">
             <h1>MANHAJUL HIDAYA<br>DA'WA CAMPUS</h1>
-            <button class="btn-yellow">Read More</button>
+            <a href="#about" class="btn-yellow" style="text-decoration: none; text-align: center; display: inline-block;">Read More</a>
         </div>
     </section>
 
@@ -46,15 +52,23 @@
             <div class="info-card green-card scroll-animate slide-left">
                 <h3>MANHAJ PROJECTS</h3>
                 <p>Manhaj Projects is a collection of various initiatives implemented by Manhajul Hidaya, aimed at the spiritual, educational, and literary development of the students...</p>
-                <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+                <a href="manhaj-projects.html" class="arrow-icon" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; color: inherit;">
+                    <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
-            <div class="info-card light-card scroll-animate slide-right">
-                <h3>Manhaj Festival</h3>
-                <p>Alif (Manhaj Festival) is a premier arts and cultural festival organized by Manhajul Hidaya, dedicated to nurturing and showcasing the creative talents of its students.</p>
-                <div class="arrow-icon green-arrow"><i class="fas fa-arrow-right"></i></div>
-            </div>
+          <section class="info-cards-section">
+       <div class="container cards-grid">
+        <div class="info-card light-card scroll-animate slide-right">
+            <h3>Manhaj Festival</h3>
+            <p>Alif (Manhaj Festival) is a premier arts and cultural festival organized by Manhajul Hidaya, dedicated to nurturing and showcasing the creative talents of its students.</p>
+            <a href="manhaj-festival.html" class="arrow-icon green-arrow" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; color: inherit;">
+                <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <section class="director-section">
         <div class="container director-grid">
@@ -62,7 +76,7 @@
                 <img src="usthad.jpg" alt="Director">
             </div>
             <div class="director-text scroll-animate slide-right">
-                <span class="sub-title">FOUNDER</span>
+                <span class="sub-title">DIRECTOR</span>
                 <h2>ALI ABDUNOOR BUKHARI POOKKOTTUR</h2>
                 <p>Usthad Ali Abdunnur Bukhari Pookkottur, a renowned Islamic scholar, orator, and educator from Kerala, India, is celebrated for his expertise in Islamic theology, jurisprudence, and the Arabic language. He has authored numerous insightful works on Islamic topics and delivered impactful lectures at various seminars and conferences, captivating audiences with his profound knowledge.</p>
                 <p>Actively involved in Islamic education, he has taught at several institutions in Kerala, nurturing students and promoting Islamic values. Respected for his dedication to scholarship and education, he continues to inspire and foster a deeper understanding of Islamic teachings.</p>
@@ -80,7 +94,7 @@
         </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="container about-grid">
             <div class="about-text scroll-animate slide-left">
                 <span class="sub-title">ABOUT US</span>
@@ -93,7 +107,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="counter-section">
         <div class="container counter-grid">
@@ -170,7 +183,7 @@
             <div class="footer-col logo-col">
                 <h2 class="footer-logo">MANHAJUL HIDAYA</h2>
                 <p>Nurturing generation with values and quality education.</p>
-                <p><i class="fas fa-phone"></i> +91 123 456 789</p>
+                <p><i class="fas fa-phone"></i> +91 98955 80156</p>
                 <p><i class="fas fa-envelope"></i> manhajulhidayacm@gmail.com</p>
             </div>
             <div class="footer-col">
@@ -202,4 +215,5 @@
 
     <script src="script.js"></script>
 </body>
-</html>
+        </html>
+            
