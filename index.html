@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manhajul Hidaya Dars & Da'wa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <div class="container header-flex">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +91 123 456 789</span>
+                <span><i class="fas fa-envelope"></i> manhajulhidayacm@gmail.com</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <video id="bgVideo" class="bg-video" autoplay loop muted playsinline>
+            <source src="manhajul.webm" type="video/webm">
+        </video>
+        
+        <div class="overlay"></div>
+        
+        <button id="muteBtn" class="audio-btn">
+            <i class="fas fa-volume-mute"></i>
+        </button>
+        
+        <div class="container hero-content animate-fade-in">
+            <h1>MANHAJUL HIDAYA<br>DA'WA CAMPUS</h1>
+            <button class="btn-yellow">Read More</button>
+        </div>
+    </section>
+
+    <section class="info-cards-section">
+        <div class="container cards-grid">
+            <div class="info-card green-card scroll-animate slide-left">
+                <h3>MANHAJ PROJECTS</h3>
+                <p>Manhaj Projects is a collection of various initiatives implemented by Manhajul Hidaya, aimed at the spiritual, educational, and literary development of the students...</p>
+                <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div class="info-card light-card scroll-animate slide-right">
+                <h3>Manhaj Festival</h3>
+                <p>Alif (Manhaj Festival) is a premier arts and cultural festival organized by Manhajul Hidaya, dedicated to nurturing and showcasing the creative talents of its students.</p>
+                <div class="arrow-icon green-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="director-section">
+        <div class="container director-grid">
+            <div class="director-image scroll-animate slide-left">
+                <img src="usthad.jpg" alt="Director">
+            </div>
+            <div class="director-text scroll-animate slide-right">
+                <span class="sub-title">FOUNDER</span>
+                <h2>ALI ABDUNOOR BUKHARI POOKKOTTUR</h2>
+                <p>Usthad Ali Abdunnur Bukhari Pookkottur, a renowned Islamic scholar, orator, and educator from Kerala, India, is celebrated for his expertise in Islamic theology, jurisprudence, and the Arabic language. He has authored numerous insightful works on Islamic topics and delivered impactful lectures at various seminars and conferences, captivating audiences with his profound knowledge.</p>
+                <p>Actively involved in Islamic education, he has taught at several institutions in Kerala, nurturing students and promoting Islamic values. Respected for his dedication to scholarship and education, he continues to inspire and foster a deeper understanding of Islamic teachings.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-banner scroll-animate fade-in">
+        <div class="container banner-flex">
+            <div class="banner-text">
+                <i class="fas fa-handshake"></i>
+                <span>Be a part of us</span>
+            </div>
+            <button class="btn-yellow">Join Now</button>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container about-grid">
+            <div class="about-text scroll-animate slide-left">
+                <span class="sub-title">ABOUT US</span>
+                <p>Manhajul Hidaya is an Islamic institution affiliated with Bukhari Islamic Dawah College. The institution aims to produce Islamic scholars who can contribute positively to society. To achieve this goal, Manhajul Hidaya offers language studies in English, Arabic, Urdu, and other languages.</p>
+                <p>By providing these language studies, the institution enables students to gain a deeper understanding of Islamic texts, communicate effectively with people from diverse backgrounds, and spread the message of Islam globally.</p>
+                <button class="btn-yellow">Read More</button>
+            </div>
+            <div class="about-image scroll-animate slide-right">
+                <img src="dars.jpg" alt="About Campus">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="counter-section">
+        <div class="container counter-grid">
+            <div class="counter-item scroll-animate scale-up">
+                <h3>10+</h3>
+                <p>Faculties</p>
+            </div>
+            <div class="counter-item scroll-animate scale-up">
+                <h3>48+</h3>
+                <p>Students</p>
+            </div>
+            <div class="counter-item scroll-animate scale-up">
+                <h3>2+</h3>
+                <p>Institutions</p>
+            </div>
+            <div class="counter-item scroll-animate scale-up">
+                <h3>10+</h3>
+                <p>Years</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section scroll-animate fade-in">
+        <div class="container text-center">
+            <span class="sub-title" style="color: var(--yellow-gold);">TESTIMONIALS</span>
+            <h2>What People Say</h2>
+            
+            <div class="testimonial-slider">
+                <div class="slide active">
+                    <p>"Affiliated with Bukhari Dawah College, Manhajul Hidaya creates scholars who benefit society. By teaching languages like Arabic, English, and Urdu, it helps students share the message of Islam globally."</p>
+                </div>
+                <div class="slide">
+                    <p>"Manhajul Hidaya teaches Arabic, English, and Urdu. This language training helps students deeply understand Islamic texts and communicate effectively with people worldwide."</p>
+                </div>
+                <div class="slide">
+                    <p>"The goal of Manhajul Hidaya is to raise inspiring Islamic scholars. Through multilingual education, it prepares students to spread the message of Islam across the globe."</p>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-section">
+        <div class="container">
+            <h2 class="text-center scroll-animate fade-in">News</h2>
+            <div class="news-list scroll-animate slide-up">
+                <div class="news-item">
+                    <div class="date-box">04 <span>May</span></div>
+                    <div class="news-details">
+                        <h4>Admission Open for 2026-27 Academic Year</h4>
+                        <p>Applications are invited for various courses at manhajul hidaya</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center scroll-animate slide-up">
+                <button class="btn-yellow">See All</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner scroll-animate fade-in">
+        <div class="container banner-flex">
+            <h2>Get better opinion from our expert team.</h2>
+            <button class="btn-yellow">Contact Us</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col logo-col">
+                <h2 class="footer-logo">MANHAJUL HIDAYA</h2>
+                <p>Nurturing generation with values and quality education.</p>
+                <p><i class="fas fa-phone"></i> +91 123 456 789</p>
+                <p><i class="fas fa-envelope"></i> manhajulhidayacm@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Institutions</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Institutions</h4>
+                <ul>
+                    <li><a href="#">Manhajul Hidaya Dars & Da'wa</a></li>
+                    <li><a href="#">Manhajul Hidaya Da'wa Campus</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 manhajul 
+            hidaya. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/+919895580156" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
